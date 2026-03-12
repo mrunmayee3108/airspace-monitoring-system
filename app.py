@@ -425,6 +425,7 @@ st.markdown("""
         <a href="/Object_Classification" class="nav-link">🛰️ Objects</a>
         <a href="/Predicted_Trajectories" class="nav-link">📡 Trajectories</a>
         <a href="/Alerts" class="nav-link">🚨 Alerts</a>
+        <a href="/AI_Assistant" class="nav-link">🤖 AI</a>
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -499,12 +500,20 @@ st.markdown("""
             <div class="card-desc">Real-time anomaly detection and suspicious aircraft alerts with automated threat assessment.</div>
             <a href="/Alerts" class="card-btn card-btn-red">→ Open Alerts</a>
         </div>
+        <div class="card">
+        <span class="card-icon">🤖</span>
+        <div class="card-title">AI Assistant</div>
+        <div class="card-desc">
+            Conversational AI that analyzes airspace data and answers operational questions.
+        </div>
+        <a href="/AI_Assistant" class="card-btn">→ Open AI Assistant</a>
+    </div>
     </div>
 </div>
 """, unsafe_allow_html=True)
 
 #ACTUAL STREAMLIT BUTTONS─
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
     airspace_btn = st.button("nav_airspace", key="nav_airspace")
 with col2:
@@ -513,6 +522,8 @@ with col3:
     traj_btn = st.button("nav_traj", key="nav_traj")
 with col4:
     alerts_btn = st.button("nav_alerts", key="nav_alerts")
+with col5:
+    ai_btn = st.button("nav_ai", key="nav_ai")
 
 if airspace_btn:
     st.switch_page("pages/1_Airspace_Activity.py")
@@ -522,6 +533,8 @@ if traj_btn:
     st.switch_page("pages/3_Predicted_Trajectories.py")
 if alerts_btn:
     st.switch_page("pages/4_Alerts.py")
+if ai_btn:
+    st.switch_page("pages/5_AI_Assistant.py")
 
 # FOOTER 
 st.markdown("""
