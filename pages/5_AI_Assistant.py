@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import google.generativeai as genai
 from agent import ask_agent
 
+# --- ADD THIS BLOCK START ---
 load_dotenv()
 API_KEY = os.getenv("GEMINI_API_KEY")
 
