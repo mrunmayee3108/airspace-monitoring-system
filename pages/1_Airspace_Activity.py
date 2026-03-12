@@ -176,14 +176,15 @@ st.markdown("""
     <a href="/" class="navbar-brand">
         <span>✈️</span>
         <span>AIRSPACE<span style="color:#7a9bbf;font-weight:400"> </span>MONITOR</span>
-        <div class="status-dot"></div>
+        <div class="dot"></div>
     </a>
     <div class="navbar-links">
-        <a href="/" class="nav-link">Dashboard</a>
-        <a href="/Airspace_Activity" class="nav-link active">🌍 Airspace</a>
+        <a href="/" class="nav-link active">Dashboard</a>
+        <a href="/Airspace_Activity" class="nav-link">🌍 Airspace</a>
         <a href="/Object_Classification" class="nav-link">🛰️ Objects</a>
         <a href="/Predicted_Trajectories" class="nav-link">📡 Trajectories</a>
-        <a href="/Alerts" class="nav-link">🚨 Alerts <span class="nav-badge">3</span></a>
+        <a href="/Spoofing_Detection" class="nav-link">🛸 Spoofing</a>
+        <a href="/AI_Assistant" class="nav-link">🤖 AI</a>
     </div>
 </div>
 """, unsafe_allow_html=True)
