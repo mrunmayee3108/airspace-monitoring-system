@@ -254,6 +254,7 @@ with content_col:
             </div>
             """, unsafe_allow_html=True)
 
+
     #AIRCRAFT MAP
     st.markdown("""
     <div class="section-header">
